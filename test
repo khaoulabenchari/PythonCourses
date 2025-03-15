@@ -1,2 +1,9 @@
 "C:\Program Files\PostgreSQL\16\bin\initdb.exe" -D "C:\Program Files\PostgreSQL\16\data"
 net start postgresql-x64-16
+sc create postgresql-x64-16 binPath= "\"C:\Program Files\PostgreSQL\16\bin\pg_ctl.exe\" runservice -N \"postgresql-x64-16\" -D \"C:\Program Files\PostgreSQL\16\data\" -w" start=auto
+net start postgresql-x64-16
+
+"C:\Program Files\PostgreSQL\16\bin\psql.exe" -U postgres
+postgres=#
+
+"C:\Program Files\PostgreSQL\16\bin\pg_ctl.exe" -D "C:\Program Files\PostgreSQL\16\data" -l logfile start
