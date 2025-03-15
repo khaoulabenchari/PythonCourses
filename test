@@ -1,0 +1,2 @@
+"C:\Program Files\PostgreSQL\16\bin\initdb.exe" -D "C:\Program Files\PostgreSQL\16\data"
+net start postgresql-x64-16
